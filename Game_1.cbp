@@ -15,9 +15,11 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-graphics-d.a" />
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-window.a" />
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-system.a" />
+					<Add library="smfl-graphics-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -30,9 +32,11 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-graphics.a" />
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-window-d.a" />
-					<Add library="../../../Libraries/SFML_CB/SFML-2.5.1/lib/libsfml-system-d.a" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
 				</Linker>
 			</Target>
 		</Build>
@@ -52,6 +56,17 @@
 			<Add directory="../../../Libraries/SFML_CB/SFML-2.5.1/lib" />
 		</Linker>
 		<Unit filename="main.cpp" />
+		<Unit filename="openal32.dll" />
+		<Unit filename="sfml-audio-2.dll" />
+		<Unit filename="sfml-audio-d-2.dll" />
+		<Unit filename="sfml-graphics-2.dll" />
+		<Unit filename="sfml-graphics-d-2.dll" />
+		<Unit filename="sfml-network-2.dll" />
+		<Unit filename="sfml-network-d-2.dll" />
+		<Unit filename="sfml-system-2.dll" />
+		<Unit filename="sfml-system-d-2.dll" />
+		<Unit filename="sfml-window-2.dll" />
+		<Unit filename="sfml-window-d-2.dll" />
 		<Extensions>
 			<code_completion />
 			<envvars />
